@@ -21,8 +21,8 @@
   max-width: 1440px;
   padding: 0 50px;
   box-sizing: border-box;
-  margin: 0 auto;
-  min-width: 1025px;
+  margin: 0;
+  min-width: 1024px;
 }
 /* navigation */
 /* M.BENSFIA */
@@ -332,7 +332,7 @@ a {
 /* M.BENSFIA */
 /****** Populaires ***********/
 .populaires {
-  width: 33%;
+  width: 34%;
 }
 
 .populaires-title {
@@ -344,7 +344,8 @@ a {
 .populaires-cards .card {
   display: flex;
 
-  margin-top: 33px;
+  margin-top: 30px;
+  margin-right: 12px;
   flex-direction: row;
   width: 370px;
   height: 147px;
@@ -505,7 +506,7 @@ footer h3 {
     margin-left: 100px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 767px) {
   nav {
     width: 33%;
     height: 100%;
@@ -517,12 +518,12 @@ footer h3 {
     width: 300px;
   }
   .chercher {
-    width: 310px;
+    width: 300px;
   }
   #recherche {
     display: flex;
     justify-content: center;
-    margin: 16px 32px;
+    margin: 16px 24px;
   }
   #recherche:hover {
     color: #0065fc;
@@ -553,12 +554,15 @@ footer h3 {
     flex-direction: column;
   }
   .hebergements {
-    width: 33%;
+    width: 32%;
   }
   .hebergements-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
+  }
+  .populaires {
+    width: 32%;
   }
   .populaires-cards .card {
     display: flex;
@@ -588,13 +592,11 @@ footer h3 {
   }
 
   footer {
+    padding: 20px 20px 0 20px;
+    width: 30%;
     display: flex;
     flex-direction: column;
 
-    padding: 20px 20px 0 20px;
-    width: 90%;
-
-    background-color: var(--main-bg-color);
     border-radius: 0px;
   }
   footer h3 {
@@ -606,17 +608,20 @@ footer h3 {
   .link-list {
     list-style: none;
   }
-  .link-list a {
-    color: black;
-    font-size: 14px;
-    font-weight: 400;
-  }
-
-  .link-list a:hover {
-    text-decoration: underline;
-    color: black;
-  }
   .link-list li {
     margin-bottom: 12px;
+
+    width: 200px;
   }
+}
+.link-list a {
+  color: black;
+
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.link-list a:hover {
+  text-decoration: underline;
+  color: black;
 }
