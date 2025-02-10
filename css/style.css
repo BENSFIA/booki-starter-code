@@ -614,6 +614,7 @@ footer h3 {
 
   .link-list a:hover {
     text-decoration: underline;
+    color: black;
   }
   .link-list li {
     margin-bottom: 12px;
