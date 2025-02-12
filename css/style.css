@@ -5,6 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
 
 :root {
   --main-color: #0065fc;
@@ -168,7 +174,7 @@ form {
   font-size: 17px;
   font-weight: 700;
   border: 2px solid var(--main-bg-color);
-
+  width: 160px;
   border-radius: 36px;
   height: 50px;
   padding: 4px 16px;
@@ -421,8 +427,8 @@ a {
 footer {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 40px 0 40px;
-
+  padding: 20px 40px 0 40px;
+  height: 200px;
   background-color: var(--main-bg-color);
   border-radius: 0px;
 }
@@ -592,9 +598,10 @@ footer h3 {
   }
 
   footer {
-    padding: 20px 20px 0 20px;
+    padding: 20px 20px 1px 20px;
     width: 30%;
-    display: flex;
+    height: auto;
+    display: block;
     flex-direction: column;
 
     border-radius: 0px;
